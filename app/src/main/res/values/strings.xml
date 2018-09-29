@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">LockerApp</string>
+
+    <string name="menu_0">Inicio</string>
+    <string name="menu_1">Armario</string>
+    <string name="menu_2">Agenda</string>
+    <string name="menu_3">Tiendas</string>
 </resources>
