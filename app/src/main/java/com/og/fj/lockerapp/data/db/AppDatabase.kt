@@ -6,6 +6,7 @@ import android.arch.persistence.room.RoomDatabase
 import android.content.Context
 import com.og.fj.lockerapp.data.constant.DefaultValue
 import com.og.fj.lockerapp.data.dao.CategoryDAO
+import com.og.fj.lockerapp.data.dao.SuitDAO
 import com.og.fj.lockerapp.data.dao.WearDAO
 import com.og.fj.lockerapp.data.entity.CategoryEntity
 import com.og.fj.lockerapp.data.entity.SuitEntity
@@ -17,6 +18,7 @@ abstract class AppDatabase : RoomDatabase() {
 
     abstract fun wearDao(): WearDAO
     abstract fun categoryDao(): CategoryDAO
+    abstract fun suitDao(): SuitDAO
 
     companion object {
         private const val DB_NAME = "lockerapp.db"

@@ -1,6 +1,10 @@
 package com.og.fj.lockerapp.ui.fragment
 
+import android.support.v7.widget.StaggeredGridLayoutManager
 import com.og.fj.lockerapp.R
+import kotlinx.android.synthetic.main.fragment_locker.*
+
+const val LOCKER_SPAN = 3
 
 class LockerFragment : BaseFragment() {
 
@@ -11,7 +15,8 @@ class LockerFragment : BaseFragment() {
     }
 
     override fun initialize() {
-        // TODO
+        lockerList.layoutManager = StaggeredGridLayoutManager(LOCKER_SPAN,
+                StaggeredGridLayoutManager.VERTICAL)
     }
 
     override fun layout(): Int {

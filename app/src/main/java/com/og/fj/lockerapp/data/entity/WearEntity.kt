@@ -12,7 +12,8 @@ import java.util.*
 @Entity(tableName = WearValue.TABLE_NAME)
 data class WearEntity(@PrimaryKey val id: String,
                       @ColumnInfo(name = DefaultValue.COLUMN_NAME) var name: String?,
-                      @ColumnInfo(name = CategoryValue.COLUMN) var category: CategoryEntity) {
+                      @ColumnInfo(name = CategoryValue.COLUMN) var category: CategoryEntity,
+                      @ColumnInfo(name = WearValue.COLUMN_PHOTO) var photo: String?) {
 
-    constructor() : this(UUID.randomUUID().toString(), null, CategoryEntity().default())
+    constructor() : this(UUID.randomUUID().toString(), null, CategoryEntity().default(), null)
 }
