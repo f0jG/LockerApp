@@ -17,4 +17,5 @@ class ShopFragment : BaseFragment() {
     override fun layout(): Int {
         return R.layout.fragment_shop
     }
+
 }

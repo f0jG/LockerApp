@@ -1,4 +1,4 @@
-package com.og.fj.lockerapp.data
+package com.og.fj.lockerapp.data.mapper
 
 import com.og.fj.lockerapp.data.bo.CategoryBO
 import com.og.fj.lockerapp.data.entity.CategoryEntity

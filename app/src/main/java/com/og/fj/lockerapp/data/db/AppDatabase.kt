@@ -8,9 +8,10 @@ import com.og.fj.lockerapp.data.constant.DefaultValue
 import com.og.fj.lockerapp.data.dao.CategoryDAO
 import com.og.fj.lockerapp.data.dao.WearDAO
 import com.og.fj.lockerapp.data.entity.CategoryEntity
+import com.og.fj.lockerapp.data.entity.SuitEntity
 import com.og.fj.lockerapp.data.entity.WearEntity
 
-@Database(entities = [WearEntity::class, CategoryEntity::class],
+@Database(entities = [WearEntity::class, CategoryEntity::class, SuitEntity::class],
         version = DefaultValue.DATABASE_VERSION)
 abstract class AppDatabase : RoomDatabase() {
 
